@@ -85,7 +85,6 @@ const ElevatorSystem = () => {
           const elevator = updatedElevators[i];
           if (elevator.state === ElevatorState.Moving) {
             const closestFloor = elevator.destination[0].floor;
-            console.log({ closestFloor });
 
             const request = updatedCallRequests.find(req =>
               req.direction === Direction.Up
